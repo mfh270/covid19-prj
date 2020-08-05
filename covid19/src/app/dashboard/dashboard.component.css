@@ -1,0 +1,25 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.carousel-inner img {
+    /* width: 80%; */
+    /* height: 30%; */
+    max-height: 100vh; 
+    object-fit: cover;
+  }
+  .example-card {
+    max-width: 300px;
+  }
+  
+  .example-header-image {
+    background-image: url('/assets/f2.jpg');
+    background-size: cover;
+  }
+  .fixed{
+    z-index: 1040;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* height: 10%; */
+  }
