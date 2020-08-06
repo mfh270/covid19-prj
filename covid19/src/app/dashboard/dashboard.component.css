@@ -4,15 +4,15 @@
 .carousel-inner img {
     /* width: 80%; */
     /* height: 30%; */
-    max-height: 100vh; 
+    max-height: 40vh; 
     object-fit: cover;
   }
   .example-card {
-    max-width: 300px;
+    max-width: 250px;
   }
   
   .example-header-image {
-    background-image: url('/assets/f2.jpg');
+    background-image: url('/assets/images/covid19.jpg');
     background-size: cover;
   }
   .fixed{
@@ -22,4 +22,8 @@
     left: 0;
     right: 0;
     /* height: 10%; */
+  }
+  mat-card-content{
+      max-height: 40px;
+      overflow: hidden;
   }
