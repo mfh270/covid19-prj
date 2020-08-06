@@ -5,3 +5,15 @@
 @import '~@angular/material/prebuilt-themes/purple-green.css'; */
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+mat-icon {
+    vertical-align: middle;
+ }
+ a {
+    text-decoration: none;
+ }
+ a mat-icon {
+    text-decoration: none;
+ }
+ .example-spacer {
+   flex: 1 1 auto;
+ }

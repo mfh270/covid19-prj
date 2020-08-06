@@ -1,6 +1,4 @@
-.example-spacer {
-    flex: 1 1 auto;
-  }
+
 .carousel-inner img {
     /* width: 80%; */
     /* height: 30%; */
@@ -27,3 +25,4 @@
       max-height: 40px;
       overflow: hidden;
   }
+

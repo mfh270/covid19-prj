@@ -1,19 +1,13 @@
 <!-- Header starts -->
 <mat-toolbar class="bg-info text-white fixed">
-    <span>THE INDIAN COVID-19 ATLAS
-    </span>
+    <button class="btn text-white" [routerLink]="'/dashboard'">THE INDIAN COVID-19 ATLAS
+    </button>
     <span class="example-spacer"></span>
 
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon>more_vert</mat-icon>
+    <button class="btn text-white" [routerLink]="'/aboutus'">
+        <mat-icon>supervised_user_circle</mat-icon> About us
     </button>
-    <!-- <mat-icon>menu</mat-icon> -->
-    <mat-menu #menu="matMenu">
-        <button mat-menu-item>
-            <mat-icon>dialpad</mat-icon>
-            <span>About us</span>
-        </button>
-    </mat-menu>
+
 </mat-toolbar>
 <br class="mb-5">
 <!-- Header ends -->
@@ -62,9 +56,9 @@
     <!-- Sliders ends -->
 
     <!-- Tiles starts -->
-    <div class="row">
+    <div class="row mb-3 mt-3">
 
-        <div class="col-md-3 mb-3 mt-3">
+        <div class="col-md-3 btn" routerLink="/symptoms">
             <mat-card class="example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image"></div>
@@ -86,7 +80,7 @@
             </mat-card>
         </div>
 
-        <div class="col-md-3 mb-3 mt-3">
+        <div class="col-md-3 btn" routerLink="/precautions">
             <mat-card class="example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image"></div>
@@ -105,7 +99,7 @@
             </mat-card>
         </div>
 
-        <div class="col-md-3 mb-3 mt-3">
+        <div class="col-md-3 btn" routerLink="/info">
             <mat-card class="example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image"></div>
@@ -122,7 +116,7 @@
             </mat-card>
         </div>
 
-        <div class="col-md-3 mb-3 mt-3">
+        <div class="col-md-3 btn" routerLink="/help">
             <mat-card class="example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image"></div>
@@ -139,7 +133,7 @@
             </mat-card>
         </div>
 
-        <div class="col-md-3 mb-3">
+        <div class="col-md-3 btn" routerLink="/links">
             <mat-card class="example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image"></div>
@@ -158,7 +152,7 @@
             </mat-card>
         </div>
 
-        <div class="col-md-3 mb-3">
+        <div class="col-md-3 btn" routerLink="/videos">
             <mat-card class="example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image"></div>
@@ -176,7 +170,7 @@
             </mat-card>
         </div>
 
-        <div class="col-md-3 mb-3">
+        <div class="col-md-3 btn" routerLink="/remedies">
             <mat-card class="example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image"></div>
@@ -186,13 +180,13 @@
                 <img mat-card-image src="/assets/images/home-remedies.jpg" alt="Photo of a Shiba Inu">
                 <mat-card-content>
                     <p>
-                        If you feel sick you should rest, drink plenty of fluid, and eat nutritious food. 
+                        If you feel sick you should rest, drink plenty of fluid, and eat nutritious food.
                     </p>
                 </mat-card-content>
             </mat-card>
         </div>
 
-        <div class="col-md-3 mb-3">
+        <div class="col-md-3 btn" routerLink="/self-test">
             <mat-card class="example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image"></div>
@@ -210,7 +204,7 @@
             </mat-card>
         </div>
 
-        <div class="col-md-3 mb-3">
+        <div class="col-md-3 btn" routerLink="/world-tracker">
             <mat-card class="example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image"></div>
@@ -228,7 +222,7 @@
             </mat-card>
         </div>
 
-        <div class="col-md-3 mb-3">
+        <div class="col-md-3 btn" routerLink="/india-tracker">
             <mat-card class="example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image"></div>
