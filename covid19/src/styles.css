@@ -17,3 +17,10 @@ mat-icon {
  .example-spacer {
    flex: 1 1 auto;
  }
+ .mat-card-header-text {
+   margin: 0px 5px !important;
+}
+.mat-card-avatar{
+   height: 32px !important;
+   margin-bottom: 5px;;
+}
