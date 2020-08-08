@@ -1,5 +1,5 @@
 <!-- Header starts -->
-<mat-toolbar class="bg-info text-white fixed">
+<mat-toolbar class="text-white fixed bg-lightseagreen">
     <button class="btn text-white" [routerLink]="'/dashboard'">THE INDIAN COVID-19 ATLAS
     </button>
     <span class="example-spacer"></span>
@@ -11,3 +11,39 @@
 </mat-toolbar>
 <br class="mb-5">
 <!-- Header ends -->
+<div class="container text-justify">
+
+    <img class="d-block w-100" src="/assets/images/emergency-help1.jpg"><br>
+
+    <h3 class="text-style">
+        The health ministry (Department of Health & Family Welfare) has set up helpline numbers for all types of queries
+        and support related to the COVID-19 or Coronavirus infection. Below are the Coronavirus helpline official phone
+        numbers and central emergency contact number of other states and union territories:
+    </h3>
+
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <!-- Position Column -->
+        <ng-container matColumnDef="position">
+            <mat-header-cell *matHeaderCellDef> S No. </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef> Location Name</mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+        </ng-container>
+
+        <!-- Number Column -->
+        <ng-container matColumnDef="number">
+            <mat-header-cell *matHeaderCellDef> Helpline No. </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.number}} </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+    </mat-table>
+</div>
+
+<br>

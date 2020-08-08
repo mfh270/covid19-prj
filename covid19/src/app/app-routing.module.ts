@@ -12,7 +12,7 @@ import { SelfTestComponent } from '../app/self-test/self-test.component';
 import { SymptomsComponent } from '../app/symptoms/symptoms.component';
 import { VideosComponent } from '../app/videos/videos.component';
 import { WorldTrackerComponent } from '../app/world-tracker/world-tracker.component';
-
+import { QaComponent } from '../app/qa/qa.component';
 const routes: Routes = [
   { path: "", redirectTo: "/dashboard", pathMatch: "full" },
   { path: "dashboard", component: DashboardComponent },
@@ -27,6 +27,7 @@ const routes: Routes = [
   { path: "symptoms", component: SymptomsComponent },
   { path: "videos", component: VideosComponent },
   { path: "world-tracker", component: WorldTrackerComponent },
+  { path: "Q&A", component: QaComponent}
 
 ]
 @NgModule({

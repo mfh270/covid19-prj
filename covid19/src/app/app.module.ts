@@ -24,6 +24,8 @@ import { RemediesComponent } from './remedies/remedies.component';
 import { SelfTestComponent } from './self-test/self-test.component';
 import { WorldTrackerComponent } from './world-tracker/world-tracker.component';
 import { IndiaTrackerComponent } from './india-tracker/india-tracker.component';
+import { MatTableModule } from '@angular/material/table';
+import { QaComponent } from './qa/qa.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,8 @@ import { IndiaTrackerComponent } from './india-tracker/india-tracker.component';
     RemediesComponent,
     SelfTestComponent,
     WorldTrackerComponent,
-    IndiaTrackerComponent
+    IndiaTrackerComponent,
+    QaComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import { IndiaTrackerComponent } from './india-tracker/india-tracker.component';
     HttpClientModule,
     OverlayModule,
     MatTooltipModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
