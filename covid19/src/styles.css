@@ -27,3 +27,7 @@ mat-icon {
 .bg-lightseagreen{
    background-color: lightseagreen;
 }
+.text-style{
+   letter-spacing: 1px !important;
+}
+
