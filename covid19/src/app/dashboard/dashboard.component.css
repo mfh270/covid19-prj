@@ -5,9 +5,6 @@
     max-height: 40vh; 
     object-fit: cover;
   }
-  .example-card {
-    max-width: 250px;
-  }
   
   .example-header-image {
     background-image: url('/assets/images/covid19.jpg');
