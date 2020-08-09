@@ -26,6 +26,7 @@ import { WorldTrackerComponent } from './world-tracker/world-tracker.component';
 import { IndiaTrackerComponent } from './india-tracker/india-tracker.component';
 import { MatTableModule } from '@angular/material/table';
 import { QaComponent } from './qa/qa.component';
+import { SuggestionsComponent } from './suggestions/suggestions.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { QaComponent } from './qa/qa.component';
     SelfTestComponent,
     WorldTrackerComponent,
     IndiaTrackerComponent,
-    QaComponent
+    QaComponent,
+    SuggestionsComponent
   ],
   imports: [
     BrowserModule,
