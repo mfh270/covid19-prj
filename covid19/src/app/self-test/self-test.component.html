@@ -27,11 +27,48 @@
     <h3 class="text-style">
         if oxygen level is below 90 - test it with oxymeter - effected.
     </h3>
+    <!-- 
+    (1) Dry cough + Sneeze = Air pollution<br>
 
-    (1) dry cough + sneeze = air pollution<br>
+    (2) Cough + Mucus + Sneeze + Runny nose = Common cold<br>
 
-    (2) cough + mucus + sneeze + runny nose = common cold<br>
+    (3) Cough + Mucus + Sneeze + Runny nose + Body ache + Weakness + Light fever = Flu<br>
 
-    (3) Cough + mucus + sneeze + runny nose + body ache + weakness + light fever = flu<br>
+    (4) Dry cough + Sneeze + Body pain + Weakness + High fever + Fifficulty breathing = Coronavirus<br> -->
+    <div class="d-flex m-0">
+        <span *ngFor="let p of pollution">
+            <mat-checkbox [checked]="p.checked" (change)="p.checked = !p.checked; onChange(p);"> {{ p.name }} &nbsp;
+            </mat-checkbox>
+        </span>
+        <span *ngIf='result1'>{{result1}}</span>
+    </div>
+    <div class="d-flex">
+        <span *ngFor="let c of cold">
+            <mat-checkbox [checked]="c.checked" (change)="c.checked = !c.checked; onChange(c);"> {{ c.name }} &nbsp;
+            </mat-checkbox>
+        </span>
+        <span *ngIf='result2'>{{result2}}</span>
+    </div>
+    <div class="d-flex">
+        <span *ngFor="let f of flu">
+            <mat-checkbox type="checkbox" [checked]="f.checked" (change)="f.checked = !f.checked; onChange(f);">
+                {{ f.name }}
+                &nbsp;
+            </mat-checkbox>
+        </span>
+        <span *ngIf='result3'>{{result3}}</span>
+    </div>
+    <div class="d-flex">
+        <span *ngFor="let cr of corona">
+            <mat-checkbox type="checkbox" [checked]="cr.checked" (change)="cr.checked = !cr.checked; onChange(cr);">
+                {{ cr.name }} &nbsp;
+            </mat-checkbox>
+        </span>
+        <span *ngIf='result4'>{{result4}}</span>
+    </div>
 
-    (4) Dry cough + sneeze + body pain + weakness + high fever + difficulty breathing = coronavirus<br>
+    <button mat-raised-button color="primary" (click)="check()">Check</button>
+
+
+</div>
+<br>
