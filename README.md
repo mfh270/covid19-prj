@@ -2,6 +2,7 @@
 College - covid 19 prj
 # clone git repo on your system
 `git clone https://github.com/mfh270/covid19-prj.git`
+# Install nodejs & npm packages
 # install angular cli
 `npm install -g @angular/cli`
 # move into the folder
