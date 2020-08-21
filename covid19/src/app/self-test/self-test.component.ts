@@ -265,7 +265,7 @@ checkDisease(){
      this.diseaseName="You are likely to be infected with Coronavirus - please consult with doctor soon";
   }
    else{
-      this.diseaseName="please consult the doctor";
+      this.diseaseName="Its better that you please consult the doctor for safety";
    }
 
 }
