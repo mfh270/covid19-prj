@@ -1,1 +1,32 @@
+<!-- Header starts -->
+<mat-toolbar class="bg-lightseagreen text-white fixed">
+    <button class="btn text-white" [routerLink]="'/dashboard'">THE INDIAN COVID-19 ATLAS
+    </button>
+    <span class="example-spacer"></span>
+
+    <button class="btn text-white" [routerLink]="'/aboutus'">
+        <mat-icon>supervised_user_circle</mat-icon> About us
+    </button>
+    
+    <button class="btn text-white" [routerLink]="'/contactus'">
+       <mat-icon>perm_contact_calendar</mat-icon>Contact us
+    </button>
+
+</mat-toolbar>
+<br class="mb-5">
+<!-- Header ends -->
+
+<!-- Main body -->
 <router-outlet></router-outlet>
+<!-- Main body -->
+
+<!-- Footer starts-->
+<footer class="footer">
+    <a class="text-white" routerLink="/privacypolicies">Privacy Policy</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+    <a class="text-white" routerLink="/disclamer">Disclaimer</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+    <a class="text-white" routerLink="/terms">Terms and conditions</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+     Copyright &copy;
+    <a class="text-white" routerLink="/help"> MFH
+    </a>2020
+  </footer>
+  <!-- Footer ends -->
