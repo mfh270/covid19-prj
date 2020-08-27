@@ -10,6 +10,7 @@ mat-icon {
  }
  a {
     text-decoration: none;
+    color: white;
  }
  a mat-icon {
     text-decoration: none;
@@ -31,3 +32,9 @@ mat-icon {
    letter-spacing: 1px !important;
 }
 
+.footer {
+   text-align: center;
+   padding: 10px;
+   background-color: mediumaquamarine;
+   color: white;
+ }
