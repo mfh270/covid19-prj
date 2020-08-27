@@ -32,6 +32,11 @@ import { WorldTrackerComponent } from './world-tracker/world-tracker.component';
 import { IndiaTrackerComponent } from './india-tracker/india-tracker.component';
 import { QaComponent } from './qa/qa.component';
 import { SuggestionsComponent } from './suggestions/suggestions.component';
+import { TermsComponent } from './terms/terms.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { PrivacyPoliciesComponent } from './privacy-policies/privacy-policies.component';
+import { DisclamerComponent } from './disclamer/disclamer.component';
+
 
 @NgModule({
   declarations: [
@@ -49,7 +54,11 @@ import { SuggestionsComponent } from './suggestions/suggestions.component';
     WorldTrackerComponent,
     IndiaTrackerComponent,
     QaComponent,
-    SuggestionsComponent
+    SuggestionsComponent,
+    TermsComponent,
+    ContactUsComponent,
+    PrivacyPoliciesComponent,
+    DisclamerComponent,
   ],
   imports: [
     BrowserModule,

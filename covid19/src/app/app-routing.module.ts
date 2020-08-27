@@ -14,6 +14,11 @@ import { VideosComponent } from '../app/videos/videos.component';
 import { WorldTrackerComponent } from '../app/world-tracker/world-tracker.component';
 import { QaComponent } from '../app/qa/qa.component';
 import { SuggestionsComponent } from '../app/suggestions/suggestions.component';
+import { TermsComponent } from '../app/terms/terms.component';
+import { ContactUsComponent } from '../app/contact-us/contact-us.component';
+import { PrivacyPoliciesComponent } from '../app/privacy-policies/privacy-policies.component';
+import { DisclamerComponent } from '../app/disclamer/disclamer.component';
+
 const routes: Routes = [
   { path: "", redirectTo: "/dashboard", pathMatch: "full" },
   { path: "dashboard", component: DashboardComponent },
@@ -29,8 +34,11 @@ const routes: Routes = [
   { path: "videos", component: VideosComponent },
   { path: "world-tracker", component: WorldTrackerComponent },
   { path: "Q&A", component: QaComponent},
-  { path: "suggestions", component: SuggestionsComponent}
-
+  { path: "suggestions", component: SuggestionsComponent},  
+  { path: "terms", component: TermsComponent},
+  { path: "contactus", component: ContactUsComponent},
+  { path: "privacypolicies", component: PrivacyPoliciesComponent},
+  { path: "disclamer", component: DisclamerComponent}
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
